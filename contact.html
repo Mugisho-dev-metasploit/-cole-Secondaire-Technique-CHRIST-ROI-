@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>École Technique CHRIST ROI - Contact</title>
+  <meta name="description" content="Contactez l'École Secondaire Technique CHRIST ROI : adresse, téléphone, email et formulaire de contact." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="container header-content">
+      <div class="logo-block">
+        <div class="logo-circle">CR</div>
+        <div class="logo-text">
+          <span class="school-name">École Secondaire Technique</span>
+          <span class="school-main">CHRIST ROI</span>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="sections.html">Sections</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="admission.html">Admission</a>
+        <a href="contact.html" class="active btn-nav">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero slim">
+      <div class="container">
+        <h1>Contactez-nous</h1>
+        <p>
+          Nous sommes à votre écoute pour répondre à toutes vos questions et vous accompagner dans votre projet d'inscription.
+        </p>
+      </div>
+    </section>
+
+    <section class="page-section container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <h2>Informations de contact</h2>
+          
+          <div class="contact-item">
+            <strong>📍 Adresse complète</strong>
+            <p>
+              <strong>École Secondaire Technique CHRIST ROI</strong><br />
+              Quartier : Nyawere Mukukwe<br />
+              Dans l'enclos de l'église 8ème CEPAC Philadelphie Mukukwe<br />
+              Ville : Bukavu<br />
+              Province : Sud-Kivu<br />
+              République Démocratique du Congo
+            </p>
+            <p class="map-info contact-gps-info">
+              <strong>Coordonnées GPS :</strong><br />
+              Latitude : 2°30'34.65'' S | Longitude : 28°51'36.76'' E<br />
+              Altitude : 1510 m
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <strong>📞 Téléphone & WhatsApp</strong>
+            <p>
+              <a href="tel:+243995016373">+243 995 016 373</a><br />
+              <small>Disponible sur WhatsApp | Lundi - Vendredi : 8h00 - 16h00</small>
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <strong>✉️ Email officiel</strong>
+            <p>
+              <a href="mailto:mugishomerci123@gmail.com">mugishomerci123@gmail.com</a>
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <strong>🕒 Horaires d'ouverture</strong>
+            <p>
+              <strong>Secrétariat :</strong><br />
+              Lundi - Vendredi : 7h30 - 16h30<br />
+              Samedi : 7h30 - 12h30 (sur rendez-vous pour la consultation administratif)<br />
+              Dimanche : Fermé
+            </p>
+          </div>
+
+          <div class="map-container">
+            <h3>🗺️ Localisation sur la carte</h3>
+            <iframe 
+              src="https://www.google.com/maps?q=-2.509625,28.860211&hl=fr&z=15&output=embed" 
+              width="100%" 
+              height="400" 
+              class="map-iframe"
+              allowfullscreen="" 
+              loading="lazy"
+              title="Carte Google Maps - École Technique CHRIST ROI">
+            </iframe>
+            <div class="map-link-container">
+              <a 
+                href="https://www.google.com/maps?q=-2.509625,28.860211&hl=fr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="btn btn-primary">
+                📍 Cliquez pour nous trouver sur Google Maps
+              </a>
+            </div>
+            <p class="map-info">
+              <strong>Marqueur :</strong> École Technique CHRIST ROI<br />
+              <strong>Coordonnées GPS :</strong> 2°30'34.65'' S, 28°51'36.76'' E (Altitude : 1510 m)
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h2>Formulaire de contact</h2>
+          <div class="form-success" id="formSuccess">
+            ✅ Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.
+          </div>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="nom">Nom complet *</label>
+              <input type="text" id="nom" name="nom" required /> 
+              <div class="form-error">Veuillez entrer votre nom.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required />
+              <div class="form-error">Veuillez entrer une adresse email valide.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="telephone">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone" />
+              <small>Optionnel</small>
+            </div>
+
+            <div class="form-group">
+              <label for="sujet">Sujet *</label>
+              <select id="sujet" name="sujet" required>
+                <option value="">Sélectionnez un sujet</option>
+                <option value="admission">Admission / Inscription</option>
+                <option value="sections">Informations sur les sections</option>
+                <option value="visite">Demande de visite</option>
+                <option value="autre">Autre</option>
+              </select>
+              <div class="form-error">Veuillez sélectionner un sujet.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+              <div class="form-error">Veuillez entrer votre message.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full-width">
+              Envoyer le message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> École Secondaire Technique CHRIST ROI. Tous droits réservés.</p>
+      <p class="footer-small">Site pédagogique réalisé dans le cadre d'un projet scolaire.</p>
+      <p class="footer-small">Design réalisée par <a href="https://www.instagram.com/mugisho_ntashara/" target="_blank" rel="noopener noreferrer" class="link-accent">mugisho_ntashara</a></p>
+    </div>
+    
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
